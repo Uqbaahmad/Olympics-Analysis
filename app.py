@@ -4,6 +4,7 @@ import plotly.express as px
 import preprocessor, add
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.figure_factory as ff
 
 
 
@@ -13,7 +14,7 @@ region_df = pd.read_csv('noc_regions.csv')
 df = preprocessor.preprocess(df, region_df)
 st.sidebar.title("Olympics Analysis")
 
-user_menu = st.sidebar.radio('Select An Option', ('Medal Tally', 'Overall Analysis', 'Country-Wise Analysis', 'Athele Wise Analysis'))
+user_menu = st.sidebar.radio('Select An Option', ('Medal Tally', 'Overall Analysis'))
 
 #st.dataframe(df)
 
@@ -96,3 +97,4 @@ if user_menu == "Overall Analysis":
     selected_sport=st.selectbox("Select a Sport", sport_list)
     x = add.most_successful(df, selected_sport)
     st.table(x)
+

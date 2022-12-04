@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def fetch_medal_tally(df, year, country):
@@ -22,12 +21,6 @@ def fetch_medal_tally(df, year, country):
                                                                                       ascending=False).reset_index()
 
     var['total'] = var['Gold'] + var['Silver'] + var['Bronze']
-
-    var['Gold'] = var['Gold'].astype('int')
-    var['Silver'] = var['Silver'].astype('int')
-    var['Bronze'] = var['Bronze'].astype('int')
-    var['total'] = var['total'].astype('int')
-
     return var
 
 
@@ -42,10 +35,12 @@ def country_year_list(df):
 
     return years,country
 
-def data_over_time(df, col):
+def data_over_time(df,col):
+
     nations_over_time = df.drop_duplicates(['Year', col])['Year'].value_counts().reset_index().sort_values('index')
-    nations_over_time.rename(columns={'index':"year", "Year": col}, inplace=True)
+    nations_over_time.rename(columns={'index': 'Edition', 'Year': col}, inplace=True)
     return nations_over_time
+
 
 def most_successful(df, sport):
     temp_df = df.dropna(subset=['Medal'])
@@ -53,7 +48,16 @@ def most_successful(df, sport):
     if sport != 'Overall':
         temp_df = temp_df[temp_df['Sport'] == sport]
 
-    x = temp_df['Name'].value_counts().reset_index().head(15).merge(df, left_on='index', right_on='Name', how='left')[
+    var = temp_df['Name'].value_counts().reset_index().head(15).merge(df, left_on='index', right_on='Name', how='left')[
         ['index', 'Name_x', 'Sport', 'region']].drop_duplicates('index')
-    x.rename(columns={'index': 'Name', 'Name_x': 'Medals'}, inplace=True)
-    return x  
+    var.rename(columns={'index': 'Name', 'Name_x': 'Medals'}, inplace=True)
+    return var
+
+def yearwise_medal_tally(df,country):
+    temp_df = df.dropna(subset=['Medal'])
+    temp_df.drop_duplicates(subset=['Team', 'NOC', 'Games', 'Year', 'City', 'Sport', 'Event', 'Medal'], inplace=True)
+
+    new_df = temp_df[temp_df['region'] == country]
+    final_df = new_df.groupby('Year').count()['Medal'].reset_index()
+
+    return final_df
