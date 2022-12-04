@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import preprocessor, Streamlit.add as add
+import preprocessor, add
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
@@ -68,4 +68,33 @@ if user_menu == "Overall Analysis":
         st.header("Athletes") 
         st.header(athletes) 
 
+    nations_over_time = add.data_over_time(df, 'region')
+    fig = px.line(nations_over_time, x="Edition", y = "region")
+    st.header( "Participating nations over the years")
+    st.plotly_chart(fig)
+
+    event_over_time = add.data_over_time(df, 'Event')
+    fig = px.line(event_over_time, x="Edition", y = "Event")
+    st.header( "Event over the years")
+    st.plotly_chart(fig)
+
+    athlete_over_time = add.data_over_time(df, 'Name')
+    fig = px.line(athlete_over_time, x="Edition", y = "Name")
+    st.header("Athletes over the years")
+    st.plotly_chart(fig)
+
+    st.title("No. of Events over time (Every Sport)")
+    fig,ax = plt.subplots(figsize = (25, 25))
+    x = df.drop_duplicates(['Year', 'Sport', 'Event'])
+    ax = sns.heatmap(x.pivot_table(index='Sport', columns = 'Year', values= 'Event', aggfunc='count').fillna(0).astype('int'), annot=True)
+    st.pyplot(fig)
+
+    st.title("Most Successful Athletes")
+    sport_list = df['Sport'].unique().tolist()
+    sport_list.sort()
+    sport_list.insert(0, 'Overall')
+
+    selected_sport=st.selectbox("Select a Sport", sport_list)
+    x = add.most_successful(df, selected_sport)
+    st.table(x)
 
