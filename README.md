@@ -71,9 +71,10 @@ The Region file contains 230 rows and 3 columns. The columns are;
 
 18. Which countries have never won a gold medal but have won silver/bronze medals?
 
-19. In which Sport/event, did Nigeria win its highest medals?
+19. Break down all Olympic games where Nigeria won medals for Football and how many medals in each Olympic game.
 
-20. Break down all Olympic games where Nigeria won medals for Football and how many medals in each Olympic game.
+![Screenshot (194)](https://user-images.githubusercontent.com/104266403/208306511-9ea153cb-10db-4077-a2a5-50c500ecb7a4.png)
+
 
 ### Insights : 
 * There have been a total of 51 Olympic games from 1896–2016
