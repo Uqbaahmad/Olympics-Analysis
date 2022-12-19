@@ -79,3 +79,15 @@ The Region file contains 230 rows and 3 columns. The columns are;
 * Michael Fred Phelps has won the most medals in Olympic history
 * The most successful country in the Olympics is the USA with a total of 5637 medals
 * Nigeria won its highest Olympic medal in football with 50 medals.
+
+# Streamlit
+I have used streamlit because in this I can show all the graph in web page. In Jupyter notebooks, we used to do a lot of coding for every graph, which caused space problems.
+
+[Streamlit Visulization](https://github.com/Uqbaahmad/Olympics-Analysis/tree/main/Streamlit)
+
+To run this web page: <br/>
+
+* **cd Streamlit** <br/>
+* **streamlit run app.py** <br/>
+  **Local URL: http://localhost:8501  <br/>
+  Network URL: http://192.168.0.101:8501**
