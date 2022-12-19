@@ -46,8 +46,8 @@ The Region file contains 230 rows and 3 columns. The columns are;
 
 ### Data analysis is about answering questions. Let's define some questions :
 1. How many country participated in Olympics?
-
-1. How many Olympics games have been held?
+2. How many Olympics games have been held?
+3. Top 10 participating countries to the Olympics? in both summer and winter
 
 2. Mention the total number of nations who participated in each Olympics game?
 
@@ -68,6 +68,8 @@ The Region file contains 230 rows and 3 columns. The columns are;
 15. Identify which country won the most medals in each Olympic game.
 
 17. Which countries have never won medals?
+
+-- [olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
 
 
 ![Screenshot (194)](https://user-images.githubusercontent.com/104266403/208306511-9ea153cb-10db-4077-a2a5-50c500ecb7a4.png)
