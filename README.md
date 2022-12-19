@@ -34,44 +34,41 @@ The Region file contains 230 rows and 3 columns. The columns are;
 * Region — Name of countries
 * Notes — Notes
 
+### Issue in Dataset :
+**Region Column**
+* There are 206 country participate the olympics but there are some historical issue.<br/>
+**For example** - At that time east germany and west germany were different, but now they have become one.<br/>
+                  In 1991 Russia has disintegrated into 16 country.<br/>
+   Samoa and American Samoa are same region.<br/>
+   Individual Olympics Athletes is not a region. <br/>
+   There are 2 Virgin Islands.
+    
+
 ### Data analysis is about answering questions. Let's define some questions :
+1. How many country participated in Olympics?
+
 1. How many Olympics games have been held?
 
-2. List down all Olympic games held so far.
+2. Mention the total number of nations who participated in each Olympics game?
 
-3. Mention the total number of nations who participated in each Olympics game?
+3. Which year saw the highest and lowest no of countries participating in the Olympics?
 
-4. Which year saw the highest and lowest no of countries participating in the Olympics?
+4. Which nation has participated in all of the Olympic games?
 
-5. Which nation has participated in all of the Olympic games?
+5. Identify the sport which was played in all summer Olympics.
 
-6. Identify the sport which was played in all summer Olympics.
+6. Which Sports were just played only once in the Olympics?
 
-7. Which Sports were just played only once in the Olympics?
+7. Fetch the total number of sports played in each Olympic game.
 
-8. Fetch the total number of sports played in each Olympic game.
+8. Fetch details of the oldest athletes to win a gold medal.
 
-9. Fetch details of the oldest athletes to win a gold medal.
+9. Find the Ratio of male and female athletes who participated in all Olympic games.
 
-10. Find the Ratio of male and female athletes who participated in all Olympic games.
+15. Identify which country won the most medals in each Olympic game.
 
-11. Fetch the top 5 athletes who have won the most gold medals.
+17. Which countries have never won medals?
 
-12. Fetch the top 5 athletes who have won the most medals (gold/silver/bronze).
-
-13. Fetch the top 5 most successful countries in Olympics. Success is defined by no of medals won.
-
-14. List the total gold, silver, and bronze medals won by each country.
-
-15. List the total gold, silver, and bronze medals won by each country corresponding to each Olympic game.
-
-16. Identify which country won the most gold, most silver, and most bronze medals in each Olympic game.
-
-17. Identify which country won the most gold, silver, and bronze medals, and the most medals in each Olympic game.
-
-18. Which countries have never won a gold medal but have won silver/bronze medals?
-
-19. Break down all Olympic games where Nigeria won medals for Football and how many medals in each Olympic game.
 
 ![Screenshot (194)](https://user-images.githubusercontent.com/104266403/208306511-9ea153cb-10db-4077-a2a5-50c500ecb7a4.png)
 
