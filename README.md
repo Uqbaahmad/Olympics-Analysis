@@ -72,9 +72,6 @@ The Region file contains 230 rows and 3 columns. The columns are;
 -- [olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
 
 
-![Screenshot (194)](https://user-images.githubusercontent.com/104266403/208306511-9ea153cb-10db-4077-a2a5-50c500ecb7a4.png)
-
-
 ### Insights : 
 * There have been a total of 51 Olympic games from 1896–2016
 * France, Italy, Switzerland, and UK have participated in all Olympic games from 1896–2016
