@@ -7,7 +7,7 @@ This repository demonstrates some common EDA methods and techniques using Python
 The modern Olympic Games are the most important international sporting events, with summer and winter sports tournaments involving thousands of competitors from all over the world.
 With over 200 nations competing, the Olympic Games are regarded as the world's premier sporting event. The Olympic Games are generally held every four years, and since 1994, the Summer and Winter Olympics have alternated every two years throughout the four-year period.
 
-This file contains analysis performed upon used car dataset - [Olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/tree/main/Analysis)
+This file contains analysis performed upon used car dataset - [Olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
 
 # Column Description 
 This dataset contains information about the Olympic games from 1896–2016. The dataset contains two files; the athletes and the region file.
@@ -47,27 +47,21 @@ The Region file contains 230 rows and 3 columns. The columns are;
 ### Data analysis is about answering questions. Let's define some questions :
 1. How many country participated in Olympics?
 2. How many Olympics games have been held?
-3. Top 10 participating countries to the Olympics? in both summer and winter
-
-2. Mention the total number of nations who participated in each Olympics game?
-
-3. Which year saw the highest and lowest no of countries participating in the Olympics?
-
-4. Which nation has participated in all of the Olympic games?
-
-5. Identify the sport which was played in all summer Olympics.
-
-6. Which Sports were just played only once in the Olympics?
-
-7. Fetch the total number of sports played in each Olympic game.
-
-8. Fetch details of the oldest athletes to win a gold medal.
-
-9. Find the Ratio of male and female athletes who participated in all Olympic games.
-
-15. Identify which country won the most medals in each Olympic game.
-
-17. Which countries have never won medals?
+3. The total number of nations who participated in each Olympics game?
+4. Top 5 countries in which most medals were won?
+5. How many medals did India win?
+6. Identify each country and years record.
+7. How many no of editions were there?
+8. How many no of cities in Olympics?
+9. How many no of sports participated?
+10. How many no of events have been held?
+11. How many no of athletes participated?
+12. How many no of nations participated?
+13. Over the years how many participating nations have appeared in each Olympics?
+14. Over the years how many no of events have been held in Olympics?
+15. Over the years how many athletes have been played in Olympics?
+16. Fetch the top 10athletes who have won the most medals
+17. Identify most successful athletes all times in Olympics?
 
 -- [olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
 
