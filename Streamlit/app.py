@@ -16,9 +16,10 @@ st.sidebar.title("Olympics Analysis")
 
 user_menu = st.sidebar.radio('Select An Option', ('Medal Tally', 'Overall Analysis'))
 
-#st.dataframe(df)
+
 
 if user_menu == 'Medal Tally':
+    st.dataframe(df)
     st.sidebar.header("Medal Tally")
     years, country = add.country_year_list(df)
 
