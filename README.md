@@ -35,13 +35,23 @@ The Region file contains 230 rows and 3 columns. The columns are;
 * Notes — Notes
 
 ### Issue in Dataset :
-**Region Column**
+**Region**
 * There are 206 country participate the olympics but there are some historical issue.<br/>
 **For example** - At that time east germany and west germany were different, but now they have become one.<br/>
                   In 1991 Russia has disintegrated into 16 country.<br/>
    Samoa and American Samoa are same region.<br/>
    Individual Olympics Athletes is not a region. <br/>
    There are 2 Virgin Islands.
+ 
+**Sport**
+* Earlier, many games used to played in the Olympics, cricket was also one of them but at present cricket is not considered an Olympic game.
+* In 120 years of Olympics, many games have been added and many games have also been removed.
+
+   
+**Year**
+* The cycle of Olympic is 4 year but in year 1904, 1906, 1908 the olympic has been held. <br/>
+*The 1906 Summer Olympics, also called the 1906 Intercalated Games, were held in Athens, Greece.
+These games are not awarded the title of Olympiad because they were held between the III and IV Olympiads. Medals were given to the participants during these games, but the medals are not officially recognised by the International Olympic Committee.* 
     
 
 ### Data analysis is about answering questions. Let's define some questions :
@@ -62,9 +72,14 @@ The Region file contains 230 rows and 3 columns. The columns are;
 15. Over the years how many athletes have been played in Olympics?
 16. Fetch the top 10athletes who have won the most medals
 17. Identify most successful athletes all times in Olympics?
+18. Identify in which year India has won how many medals?
+19. Mention probability density function of athletes age who have participated in olympics and medalist age distribution.
+20. Identify the distribution of age respect to sports(Gold Medalist)
+21. Identify the distribution of age respect to sports(Silver Medalist)
+22. Identify the Weight and height of athletes and who won medals or not.
+23. Participation of male and female in Olympics.
 
--- [olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
-
+link - [Answers](https://medium.com/@uqba2199/olympic-data-analysis-62c4ba87783a)
 
 ### Insights : 
 * There have been a total of 51 Olympic games from 1896–2016
