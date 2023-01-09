@@ -7,7 +7,7 @@ This repository demonstrates some common EDA methods and techniques using Python
 The modern Olympic Games are the most important international sporting events, with summer and winter sports tournaments involving thousands of competitors from all over the world.
 With over 200 nations competing, the Olympic Games are regarded as the world's premier sporting event. The Olympic Games are generally held every four years, and since 1994, the Summer and Winter Olympics have alternated every two years throughout the four-year period.
 
-This file contains analysis performed upon used car dataset - [Olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
+This file contains analysis performed upon olympic dataset - [Olympic.ipynb](https://github.com/Uqbaahmad/Olympics-Analysis/blob/main/Analysis/olympics.ipynb)
 
 # Column Description 
 This dataset contains information about the Olympic games from 1896–2016. The dataset contains two files; the athletes and the region file.
